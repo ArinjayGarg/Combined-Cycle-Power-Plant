@@ -9,3 +9,4 @@ env/
 Thumbs.db
 Notebooks/test.ipynb
 .gitignore
+plots/
