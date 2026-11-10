@@ -56,11 +56,17 @@ Predictions are made for the net hourly electrical energy output (PE) of the pla
 
 ```text
 Combined-Cycle-Power-Plant/
-├── data/
-│   └── uci_ccpp_dataset.csv     # UCI CCPP Dataset
-├── notebooks/                   # EDA and model training notebooks
-├── requirements.txt             # Python dependencies
-└── README.md                    # Project documentation
+├── data/                      # Dataset files
+│   ├── dataset.csv            # Cleaned/processed dataset
+│   └── uci_ccpp_dataset.csv   # Original UCI CCPP dataset
+├── Notebooks/                 # Jupyter notebooks for EDA and modeling
+│   └── main.ipynb             
+├── plots/                     # Generated plots and visualizations
+│   ├── EDA/                   # Exploratory Data Analysis figures
+│   ├── Feature_Selection/     # Feature selection and correlation plots
+│   └── Model_Evaluation/      # Residuals, predicted vs actual plots
+├── README.md                  # Project documentation
+└── requirements.txt           # Python dependencies and packages
 ```
 ## ⬇️ Installation
 1. Clone the repository
@@ -75,7 +81,7 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook notebooks/main.ipynb
 ```
-## ✅ Results & Model Performnce
+## ✅ Results & Model Performance
 
 | Metric | Score |
 | :--- | :--- |
@@ -84,6 +90,6 @@ jupyter notebook notebooks/main.ipynb
 | **MAE** | **3.60 MW** |
 
 ## 🤖 AI Disclosure
- ChatGPT used for debugging and making the code industry styled and industry ready. Gemini was used for the research part.
+  ChatGPT used for debugging and making the code industry styled and industry ready. Gemini was used for the research part.
 
 ---
