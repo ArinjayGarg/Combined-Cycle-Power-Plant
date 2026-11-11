@@ -53,7 +53,7 @@ The feature combination was selected by comparing RMSE on the same held-out test
 
 ## Project structure
 
-text
+```text
 .
 ├── data/
 │   └── dataset.csv
@@ -65,6 +65,7 @@ text
 │   └── Model_Evaluation/
 ├── README.md
 └── requirements.txt
+```
 
 
 - Notebooks/main.ipynb contains the feature-name reference.
@@ -79,10 +80,10 @@ text
 
 Install [Git](https://git-scm.com/downloads) and [Python 3](https://www.python.org/downloads/) if they are not already installed. Check that they are available in a terminal:
 
-text
+```text
 git --version
 python --version
-
+```
 
 On Windows, the Python launcher may be named py; if python --version is not recognized, try py --version and use py in place of python below.
 
@@ -90,18 +91,18 @@ On Windows, the Python launcher may be named py; if python --version is not reco
 
 Run these commands from the parent folder where you want the project directory created:
 
-bash
+```bash
 git clone https://github.com/ArinjayGarg/Combined-Cycle-Power-Plant.git
 cd Combined-Cycle-Power-Plant
-
+```
 
 ### 2. Create a virtual environment
 
 Create an isolated Python environment in the project folder:
 
-bash
+```bash
 python -m venv .venv
-
+```
 
 ### 3. Activate the environment
 
@@ -109,21 +110,21 @@ Use the command for your operating system. Run only one of these:
 
 *Windows PowerShell*
 
-powershell
+```powershell
 .\.venv\Scripts\Activate.ps1
-
+```
 
 If PowerShell blocks script activation, open Command Prompt in the project folder and activate with:
 
-bat
+```bat
 .venv\Scripts\activate.bat
-
+```
 
 *macOS or Linux*
 
-bash
+```bash
 source .venv/bin/activate
-
+```
 
 When the environment is active, the terminal prompt usually shows (.venv).
 
@@ -131,26 +132,27 @@ When the environment is active, the terminal prompt usually shows (.venv).
 
 From the project root, install the packages listed in requirements.txt:
 
-bash
+```bash
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-
+```
 
 ### 5. Launch the analysis notebook
 
 Start Jupyter from the Notebooks folder. This matters because the notebook reads the dataset from ../data/dataset.csv and saves results under ../plots/.
 
-bash
+```bash
 cd Notebooks
 jupyter notebook test.ipynb
-
+```
 
 In the browser tab that opens, select *Kernel → Restart Kernel and Run All Cells* (or *Run → Run All Cells*, depending on the Jupyter version). The test.ipynb notebook runs the analysis, compares feature combinations, evaluates the final model, and regenerates the plots and result files under plots/. main.ipynb contains the feature-name reference.
 
 To stop Jupyter, return to the terminal where it is running and press *Ctrl+C*, then confirm if prompted. To leave the virtual environment, run:
 
-bash
+```
 deactivate
+```
 
 
 ### Troubleshooting
