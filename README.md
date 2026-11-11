@@ -4,7 +4,11 @@
 
 Predicting net electrical output from the operating conditions of a combined-cycle power plant using linear regression.
 
-*Repository:* [ArinjayGarg/Combined-Cycle-Power-Plant](https://github.com/ArinjayGarg/Combined-Cycle-Power-Plant)
+*Repository:* [ArinjayGarg/Combined-Cycle-Power-Plant](https://github.com/ArinjayGarg/Combined-Cycle-Power-Plant)<br>
+<br>
+*Presentation:* [View slides](https://docs.google.com/presentation/d/1i_HJsBoYm9vk3iMOxbR0VByTbUC7At4bo_q7MOe8lqY/edit?usp=sharing)<br>
+<br>
+*Video:* [Watch video](https://youtu.be/USvFHuFqIu0)
 
 ## Project overview
 
@@ -69,7 +73,6 @@ The feature combination was selected by comparing RMSE on the same held-out test
 
 
 - Notebooks/main.ipynb contains the feature-name reference.
-- Notebooks/test.ipynb contains the data exploration, feature comparison, model evaluation, and plot-generation workflow.
 - plots/EDA/ contains exploratory charts.
 - plots/Feature_Selection/ contains feature-comparison results and charts.
 - plots/Model_Evaluation/ contains prediction, residual, and coefficient plots plus saved predictions.
@@ -143,7 +146,7 @@ Start Jupyter from the Notebooks folder. This matters because the notebook reads
 
 ```bash
 cd Notebooks
-jupyter notebook test.ipynb
+jupyter notebook main.ipynb
 ```
 
 In the browser tab that opens, select *Kernel → Restart Kernel and Run All Cells* (or *Run → Run All Cells*, depending on the Jupyter version). The test.ipynb notebook runs the analysis, compares feature combinations, evaluates the final model, and regenerates the plots and result files under plots/. main.ipynb contains the feature-name reference.
@@ -166,7 +169,7 @@ deactivate
 
 | Member | Entry number | Assigned role | Contribution | GitHub |
 |---|---|---|---|---|
-| Trisha Bansal | 20026eeb1420 | Execution lead | Idea selection and substantial coding | [2026eeb1420-tri](https://github.com/2026eeb1420-tri) |
+| Trisha Bansal | 2026eeb1420 | Execution lead | Idea selection and substantial coding | [2026eeb1420-tri](https://github.com/2026eeb1420-tri) |
 | Arinjay Garg | 2026mcb1513 | Video lead | Team coordination and idea selection | [ArinjayGarg](https://github.com/ArinjayGarg) |
 | Shubham Maurya | 2026aib1081 | Documentation lead | Coding and documentation | [2026aib1081-cyber](https://github.com/2026aib1081-cyber) |
 | Jyoti | 2026aib1044 | PPT lead | Project ideas and documentation | [2026aib1044](https://github.com/2026aib1044) |
