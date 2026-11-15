@@ -90,6 +90,8 @@ python --version
 
 On Windows, the Python launcher may be named py; if python --version is not recognized, try py --version and use py in place of python below.
 
+On macOS or Linux, use `python3` if `python` is not recognized. Replace `python` with `python3` in the commands below.
+
 ### 1. Clone the repository
 
 Run these commands from the parent folder where you want the project directory created:
@@ -149,7 +151,7 @@ cd Notebooks
 jupyter notebook main.ipynb
 ```
 
-In the browser tab that opens, select *Kernel → Restart Kernel and Run All Cells* (or *Run → Run All Cells*, depending on the Jupyter version). The test.ipynb notebook runs the analysis, compares feature combinations, evaluates the final model, and regenerates the plots and result files under plots/. main.ipynb contains the feature-name reference.
+In the browser tab that opens, select *Kernel → Restart Kernel and Run All Cells* (or *Run → Run All Cells*, depending on the Jupyter version). The main.ipynb notebook runs the analysis, compares feature combinations, evaluates the final model, and regenerates the plots and result files under plots/. main.ipynb contains the feature-name reference.
 
 To stop Jupyter, return to the terminal where it is running and press *Ctrl+C*, then confirm if prompted. To leave the virtual environment, run:
 
@@ -162,7 +164,7 @@ deactivate
 
 - *git or python is not recognized:* install Git or Python, then close and reopen the terminal so its PATH is refreshed. On Windows, try py for Python.
 - *jupyter is not recognized:* confirm (.venv) appears in the prompt and repeat python -m pip install -r requirements.txt.
-- *The dataset file cannot be found:* stop Jupyter, change to the project’s Notebooks folder, and launch jupyter notebook test.ipynb again. The notebook uses relative paths, so its working directory must be Notebooks.
+- *The dataset file cannot be found:* stop Jupyter, change to the project’s Notebooks folder, and launch jupyter notebook main.ipynb again. The notebook uses relative paths, so its working directory must be Notebooks.
 - *A package import fails:* activate the project environment and install the requirements again. Avoid installing packages into a different Python environment.
 
 ## Team 33
